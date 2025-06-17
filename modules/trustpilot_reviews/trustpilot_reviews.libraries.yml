@@ -1,0 +1,11 @@
+carousel:
+  version: 1.x
+  js:
+    js/swiper.min.js: { minified: true }
+    js/trustpilot-carousel.js: {}
+  css:
+    theme:
+      css/swiper.min.css: { minified: true }
+      css/trustpilot-carousel.css: {}
+  dependencies:
+    - core/drupal

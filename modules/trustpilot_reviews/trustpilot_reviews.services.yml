@@ -1,0 +1,4 @@
+services:
+  trustpilot_reviews.review_service:
+    class: Drupal\trustpilot_reviews\Service\ReviewService
+    arguments: ["@http_client", "@cache.default", "@logger.factory"]

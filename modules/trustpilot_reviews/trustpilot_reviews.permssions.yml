@@ -1,0 +1,4 @@
+administer trustpilot reviews:
+  title: "Administer Trustpilot Reviews"
+  description: "Configure Trustpilot Reviews settings and clear cache"
+  restrict access: true

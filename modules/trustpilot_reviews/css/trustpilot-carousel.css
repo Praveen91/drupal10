@@ -1,0 +1,173 @@
+/* Trustpilot Reviews Carousel Styles */
+.trustpilot-reviews-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.trustpilot-reviews-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.trustpilot-reviews-carousel {
+  position: relative;
+  margin: 0 auto;
+  height: 250px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.review-rating {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  font-size: 20px;
+  color: #ddd;
+  transition: color 0.2s ease;
+}
+
+.star.filled {
+  color: #00b67a;
+}
+
+.review-date {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.review-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.review-content {
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.author-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00b67a, #00a066);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.author-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 15px;
+}
+
+/* Swiper customization */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #00b67a;
+  background: white;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: -22px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #00b67a;
+  color: white;
+}
+
+.swiper-pagination-bullet {
+  background: #00b67a;
+  opacity: 0.3;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .trustpilot-reviews-wrapper {
+    padding: 15px;
+  }
+
+  .trustpilot-reviews-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .review-title {
+    font-size: 16px;
+  }
+
+  .review-content {
+    font-size: 14px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+    margin-top: -17px;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trustpilot-reviews-title {
+    font-size: 1.5rem;
+  }
+
+  .review-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .author-avatar {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+}

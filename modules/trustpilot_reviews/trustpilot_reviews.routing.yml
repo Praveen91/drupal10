@@ -1,0 +1,18 @@
+trustpilot_reviews.mock_api:
+  path: "/mock-reviews"
+  defaults:
+    _controller: '\Drupal\trustpilot_reviews\Controller\MockApiController::getReviews'
+  requirements:
+    _access: "TRUE"
+  options:
+    _admin_route: FALSE
+
+trustpilot_reviews.admin_settings:
+  path: "/admin/config/content/trustpilot-reviews"
+  defaults:
+    _form: '\Drupal\trustpilot_reviews\Form\SettingsForm'
+    _title: "Trustpilot Reviews Settings"
+  requirements:
+    _permission: "administer trustpilot reviews"
+  options:
+    _admin_route: TRUE

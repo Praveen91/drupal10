@@ -1,0 +1,9 @@
+name: Trustpilot Reviews
+type: module
+description: 'Custom module for displaying Trustpilot-style reviews in a carousel format with mock API'
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - drupal:block
+  - drupal:system
+  - drupal:user

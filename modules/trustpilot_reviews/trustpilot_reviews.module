@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Contains trustpilot_reviews.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function trustpilot_reviews_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.trustpilot_reviews':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The Trustpilot Reviews module provides a carousel display of customer reviews fetched from a mock API endpoint.') . '</p>';
+      $output .= '<h3>' . t('Usage') . '</h3>';
+      $output .= '<p>' . t('Add the "Trustpilot Reviews Carousel" block to any region via the Block layout page.') . '</p>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function trustpilot_reviews_theme() {
+  return [
+    'trustpilot_reviews_carousel' => [
+      'variables' => [
+        'reviews' => [],
+        'show_title' => TRUE,
+        'block_title' => '',
+        'autoplay' => TRUE,
+        'autoplay_delay' => 5000,
+      ],
+      'template' => 'trustpilot-reviews-carousel',
+    ],
+  ];
+}
